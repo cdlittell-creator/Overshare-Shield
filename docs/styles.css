@@ -457,3 +457,18 @@ h3{margin:0 0 8px;font-size:16px}
   }
   .nav-links a{margin:6px 0}
 }
+/* Navbar logo */
+.nav-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Hero logo (big one) */
+.hero-logo {
+  width: 160px;
+  margin: 20px auto 10px;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+}
