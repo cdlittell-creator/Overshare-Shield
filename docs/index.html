@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Overshare Shield | Privacy Awareness Web App</title>
+  <meta name="description" content="Overshare Shield is a web-based privacy awareness application that helps users identify oversharing risks and protect personal information online." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top navigation -->
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#top">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span>Overshare Shield</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" onclick="toggleMenu()">
+        Menu
+      </button>
+
+      <div id="navLinks" class="nav-links">
+        <a href="#vision">Vision</a>
+        <a href="#problem">Problem</a>
+        <a href="#method">Method</a>
+        <a href="#standards">Standards</a>
+        <a href="#privacy">Privacy by Design</a>
+        <a href="process.html">Process</a>
+
+        <a class="btn small"
+        href="mailto:clittell@my.gcu.edu,taylor.durocher@gmail.com,bbarajas117@icloud.com?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Team%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">
+       Contact the Team
+     </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <a id="top"></a>
+  <section class="hero">
+    <div class="container hero-single fade">
+      <p class="tag">CLC Capstone • Web Application</p>
+      <h1>Privacy awareness for social sharing</h1>
+      <p class="subtext large">
+        Overshare Shield is a privacy awareness web application designed to help users recognize when
+        shared content may expose sensitive personal information. The project focuses on cybersecurity
+        awareness, user consent, and privacy-first design.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn" href="#method">How it works</a>
+        <a class="btn ghost" href="process.html">View process</a>
+      </div>
+
+      <div class="mini-points">
+        <div class="mini-card">
+          <div class="mini-title">User Controlled</div>
+          <div class="mini-text">Only user-submitted content is analyzed</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-title">Privacy First</div>
+          <div class="mini-text">Built around transparency and data minimization</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-title">Clear Results</div>
+          <div class="mini-text">Privacy exposure is communicated in simple risk levels</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Vision -->
+    <section id="vision" class="section fade">
+      <div class="section-head">
+        <h2>Vision</h2>
+        <p class="muted">Why this project exists.</p>
+      </div>
+      <p>
+        Our vision is to empower everyday users to protect their privacy online by making oversharing risks clear,
+        measurable, and easy to understand. Overshare Shield supports safer digital behavior through privacy by design
+        and cybersecurity awareness.
+      </p>
+    </section>
+
+    <!-- Problem -->
+    <section id="problem" class="section fade">
+      <div class="section-head">
+        <h2>Problem</h2>
+        <p class="muted">What we are solving.</p>
+      </div>
+      <p>
+        Social platforms make it easy to share quickly, but many users do not realize how personal details such as
+        contact information, identifiers, or location indicators can be collected and misused. Oversharing increases
+        risk for phishing, identity theft, stalking, and social engineering.
+      </p>
+    </section>
+
+    <!-- Methodology -->
+    <section id="method" class="section fade">
+      <div class="section-head">
+        <h2>Methodology</h2>
+        <p class="muted">How Overshare Shield works at a high level.</p>
+      </div>
+
+      <ol class="steps">
+        <li><strong>User submits content</strong> for analysis.</li>
+        <li><strong>Text is extracted</strong> from submitted text or images.</li>
+        <li><strong>Personal identifiers are detected</strong> and classified.</li>
+        <li><strong>Weighted scoring</strong> assigns higher scores to more sensitive items like phone numbers and emails.</li>
+        <li><strong>Risk level output</strong> converts the score into Low, Medium, or High.</li>
+        <li><strong>User control</strong> supports exporting results and deleting data.</li>
+      </ol>
+    </section>
+
+    <!-- Standards -->
+    <section id="standards" class="section fade">
+      <div class="section-head">
+        <h2>Industry Standards Applied</h2>
+        <p class="muted">Security and privacy guidance used in the design.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Standard</th>
+              <th>Organization / Agency</th>
+              <th>How it applies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ISO/IEC 27001</td>
+              <td>ISO and IEC</td>
+              <td>Guides secure processing and protection of user submitted data.</td>
+            </tr>
+            <tr>
+              <td>ISO/IEC 29100</td>
+              <td>ISO and IEC</td>
+              <td>Supports privacy principles like data minimization and lawful processing.</td>
+            </tr>
+            <tr>
+              <td>CCPA / CPRA</td>
+              <td>State of California privacy law</td>
+              <td>Supports deletion and export controls and transparency for users.</td>
+            </tr>
+            <tr>
+              <td>COPPA</td>
+              <td>Federal Trade Commission</td>
+              <td>Supports safeguards for minors under 13 and consent focused design.</td>
+            </tr>
+            <tr>
+              <td>NIST Privacy Framework</td>
+              <td>NIST, U.S. Department of Commerce</td>
+              <td>Aligns design to identify risks, control data use, protect data, and communicate clearly.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy" class="section fade">
+      <div class="section-head">
+        <h2>Privacy by Design</h2>
+        <p class="muted">What we do to protect users from the start.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>User Initiated Only</h3>
+          <p>No background monitoring. The user decides what gets analyzed.</p>
+        </div>
+        <div class="card">
+          <h3>Data Minimization</h3>
+          <p>Only necessary content is processed to generate privacy risk feedback.</p>
+        </div>
+        <div class="card">
+          <h3>User Control</h3>
+          <p>Users can export results and delete analysis data.</p>
+        </div>
+      </div>
+
+      <details class="details">
+        <summary>View sample consent language</summary>
+        <div class="details-body">
+          <p><strong>Consent to Analyze Content</strong></p>
+          <p>
+            Overshare Shield analyzes content you voluntarily submit to identify potential privacy risks.
+            No automatic data collection occurs. All analysis is initiated by you.
+          </p>
+      
+          <p><strong>By continuing, you acknowledge:</strong></p>
+          <ul>
+            <li>You are submitting content voluntarily for privacy analysis.</li>
+            <li>Only the content you provide will be processed.</li>
+            <li>You may delete or export analysis results at any time.</li>
+            <li>No data will be shared externally without your consent.</li>
+            <li>If you are under 13, parental permission is required.</li>
+          </ul>
+      
+          <p>
+            This process aligns with privacy standards including ISO/IEC 27001, ISO/IEC 29100,
+            CCPA/CPRA, COPPA, and the NIST Privacy Framework.
+          </p>
+      
+          <p><strong>Consent options:</strong></p>
+          <p>☐ I Consent</p>
+          <p>✖ I Cancel</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section fade">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Questions, feedback, or stakeholder review.</p>
+      </div>
+
+      <div class="contact-box">
+        <div><strong>Team Emails:</strong></div>
+        <div>clittell@my.gcu.edu</div>
+        <div>taylor.durocher@gmail.com</div>
+        <div>bbarajas117@icloud.com</div>
+      </div>
+
+      <div class="cta-row" style="margin-top:14px;">
+        <a class="btn" href="mailto:clittell@my.gcu.edu?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Cayleigh%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question%20about%20the%20capstone.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">Email the team</a>
+        <a class="btn ghost" href="#top">Back to top</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-row">
+        <p class="muted">
+          Overshare Shield • Academic demonstration • Built for cybersecurity awareness
+        </p>
+
+        <div class="footer-links">
+          <a class="link" href="assets/pdfs/Overshare Shied Privacy Policy (1).pdf" target="_blank" rel="noopener">Privacy Policy</a>
+          <a class="link" href="assets/pdfs/Overshare Shield Terms of Use (1).pdf" target="_blank" rel="noopener">Terms & Conditions</a>
+          <a class="link" href="index.html">Home</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="site.js"></script>
+</body>
+</html>
