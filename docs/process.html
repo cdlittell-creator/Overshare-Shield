@@ -12,25 +12,47 @@
   <header class="header">
     <nav class="nav">
       <a class="brand" href="index.html#top">
-        <span class="logo-dot" aria-hidden="true"></span>
+        <img src="assets/images/OSS-Logo.png" alt="Overshare Shield logo" class="nav-logo">
         <span>Overshare Shield</span>
       </a>
-
+  
       <button class="menu-btn" type="button" aria-label="Open menu" onclick="toggleMenu()">
-        Menu
+        <span></span>
       </button>
-
-      <div id="navLinks" class="nav-links">
-        <a href="index.html#vision">Vision</a>
-        <a href="index.html#method">Method</a>
-        <a href="index.html#standards">Standards</a>
-        <a href="index.html#privacy">Privacy by Design</a>
-        <a href="index.html">Home</a>
+  
+      <div id="navLinks" class="nav-links-dropdown">
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" type="button" onclick="toggleHomeDropdown()">
+            Home <span class="caret">▾</span>
+          </button>
+  
+          <div id="homeDropdown" class="dropdown-menu">
+            <a href="index.html#top">Overview</a>
+            <a href="index.html#vision">Vision</a>
+            <a href="index.html#problem">Problem</a>
+            <a href="index.html#method">Methodology</a>
+            <a href="index.html#standards">Industry Standards</a>
+            <a href="index.html#privacy">Privacy by Design</a>
+          </div>
+        </div>
+  
+        <a href="process.html">Process</a>
+  
+        <a class="btn small" href="mailto:clittell@my.gcu.edu,taylor.durocher@gmail.com,bbarajas117@icloud.com?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Team%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">
+          Contact the Team
+        </a>
       </div>
     </nav>
   </header>
 
   <main class="container">
+    <div class="page-back fade">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Process</span>
+      </div>
+    </div>
     <!-- Intro -->
     <section class="section fade">
       <div class="section-head">
@@ -45,40 +67,75 @@
       </p>
     </section>
 
+    <section class="section fade">
+      <div class="section-head">
+        <h2>Capstone Showcase Countdown</h2>
+        <p class="muted">Preparing for the final showcase presentation on April 8.</p>
+      </div>
+    
+      <div class="countdown-box">
+        <div class="countdown-grid">
+          <div class="countdown-unit">
+            <div class="countdown-number" id="countdownDays">0</div>
+            <div class="countdown-unit-label">Days</div>
+          </div>
+    
+          <div class="countdown-unit">
+            <div class="countdown-number" id="countdownHours">0</div>
+            <div class="countdown-unit-label">Hours</div>
+          </div>
+    
+          <div class="countdown-unit">
+            <div class="countdown-number" id="countdownMinutes">0</div>
+            <div class="countdown-unit-label">Minutes</div>
+          </div>
+    
+          <div class="countdown-unit">
+            <div class="countdown-number" id="countdownSeconds">0</div>
+            <div class="countdown-unit-label">Seconds</div>
+          </div>
+        </div>
+    
+        <p class="muted countdown-note">
+          Our team is currently preparing final presentation materials, the elevator pitch, and showcase visuals.
+        </p>
+      </div>
+    </section>
+
     <!-- Current status overview -->
- 
     <section class="section fade">
       <div class="section-head">
         <h2>Current Development Status</h2>
         <p class="muted">A quick snapshot of where the project stands right now.</p>
       </div>
-    
+
       <div class="grid progress-overview">
         <div class="card">
           <h3>Website Development</h3>
-          <p>Homepage structure is underway and supporting policy pages are being linked.</p>
+          <p>The homepage, process page, and supporting project content are actively being refined.</p>
           <span class="status in-progress">In Progress</span>
         </div>
-    
+
         <div class="card">
           <h3>Privacy Documentation</h3>
-          <p>Privacy policy, consent language, and terms of use have been drafted and finalized for site use.</p>
+          <p>Privacy policy, consent language, and terms of use have been finalized and linked into the project website.</p>
           <span class="status complete">Complete</span>
         </div>
-    
+
         <div class="card">
-          <h3>App Design Logic</h3>
-          <p>Risk scoring methodology and privacy-first workflow are being refined.</p>
-          <span class="status in-progress">In Progress</span>
+          <h3>Capstone Showcase Poster</h3>
+          <p>The showcase poster has been completed and now reflects the final project direction and design.</p>
+          <span class="status complete">Complete</span>
         </div>
-    
+
         <div class="card">
-          <h3>Testing Preparation</h3>
-          <p>Functional requirement testing and documentation are being organized.</p>
-          <span class="status upcoming">Upcoming</span>
+          <h3>Elevator Pitch</h3>
+          <p>The team is currently developing a concise elevator pitch for the upcoming capstone showcase.</p>
+          <span class="status in-progress">In Progress</span>
         </div>
       </div>
     </section>
+
     <!-- Work in progress gallery -->
     <section class="section fade">
       <div class="section-head">
@@ -87,8 +144,6 @@
       </div>
 
       <div class="progress-grid">
-
-        <!-- Card 1 -->
         <article class="progress-card">
           <div class="progress-image-wrap">
             <img src="assets/images/Homepageprocess.png" alt="Homepage progress screenshot" class="progress-image">
@@ -105,10 +160,9 @@
           </div>
         </article>
 
-        <!-- Card 2 -->
         <article class="progress-card">
           <div class="progress-image-wrap">
-            <img src="assets/images/Secure Login.png" alt="Privacy policy page screenshot" class="progress-image">
+            <img src="assets/images/Secure Login.png" alt="Login credentials screenshot" class="progress-image">
           </div>
           <div class="progress-content">
             <div class="progress-top">
@@ -121,7 +175,6 @@
           </div>
         </article>
 
-        <!-- Card 3 -->
         <article class="progress-card">
           <div class="progress-image-wrap">
             <img src="assets/images/Terms of Use.png" alt="Terms page screenshot" class="progress-image">
@@ -138,7 +191,6 @@
           </div>
         </article>
 
-        <!-- Card 4 -->
         <article class="progress-card">
           <div class="progress-image-wrap">
             <img src="assets/images/UIFixes.png" alt="UI mockup screenshot" class="progress-image">
@@ -155,15 +207,14 @@
           </div>
         </article>
 
-        <!-- Card 5 -->
         <article class="progress-card">
           <div class="progress-image-wrap">
-            <img src="assets/images/UserConsentRequirement.png" alt="Testing documentation screenshot" class="progress-image">
+            <img src="assets/images/UserConsentRequirement.png" alt="User consent screenshot" class="progress-image">
           </div>
           <div class="progress-content">
             <div class="progress-top">
-              <h3>User Consent requirement</h3>
-              <span class="status upcoming">Complete</span>
+              <h3>User Consent Requirement</h3>
+              <span class="status complete">Complete</span>
             </div>
             <p>
               User consent, an essential functional requirement, is added.
@@ -171,7 +222,6 @@
           </div>
         </article>
 
-        <!-- Card 6 -->
         <article class="progress-card">
           <div class="progress-image-wrap">
             <img src="assets/images/ProcessPage.png" alt="Process page screenshot" class="progress-image">
@@ -188,6 +238,37 @@
           </div>
         </article>
 
+        <article class="progress-card">
+          <div class="progress-image-wrap">
+            <img src="assets/images/Capstone-Showcase-Poster.png" alt="Capstone showcase poster" class="progress-image">
+          </div>
+          <div class="progress-content">
+            <div class="progress-top">
+              <h3>Capstone Showcase Poster</h3>
+              <span class="status complete">Complete</span>
+            </div>
+            <p>
+              The capstone showcase poster has been finalized and summarizes the project problem, methodology,
+              functional requirements, and applied industry standards in a presentation-ready format.
+            </p>
+          </div>
+        </article>
+
+        <article class="progress-card">
+          <div class="progress-image-wrap">
+            <img src="assets/images/elevator-pitch.png" alt="Elevator pitch preparation" class="progress-image">
+          </div>
+          <div class="progress-content">
+            <div class="progress-top">
+              <h3>Elevator Pitch Development</h3>
+              <span class="status in-progress">In Progress</span>
+            </div>
+            <p>
+              The team is currently preparing a short elevator pitch to communicate the purpose, value,
+              and privacy-focused design of Overshare Shield during the showcase.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -200,9 +281,9 @@
 
       <ol class="steps">
         <li>Continue refining the website and adding updated screenshots</li>
-        <li>Refine final design project presentation review</li>
-        <li>Start and finish Capstone Showcase Poster</li>
-        <li>Prepare the project for presentation and demonstration with continuous meetings</li>
+        <li>Finalize and practice the elevator pitch for the capstone showcase</li>
+        <li>Prepare final presentation delivery and speaking roles</li>
+        <li>Present Overshare Shield at the Capstone Showcase on April 8</li>
       </ol>
     </section>
 
@@ -211,7 +292,7 @@
         <p class="muted">
           Overshare Shield • Academic demonstration • Built for cybersecurity awareness
         </p>
-    
+
         <div class="footer-links">
           <a class="link" href="assets/pdfs/Overshare Shied Privacy Policy (1).pdf" target="_blank" rel="noopener">Privacy Policy</a>
           <a class="link" href="assets/pdfs/Overshare Shield Terms of Use (1).pdf" target="_blank" rel="noopener">Terms & Conditions</a>

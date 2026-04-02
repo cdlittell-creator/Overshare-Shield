@@ -12,27 +12,36 @@
   <!-- Top navigation -->
   <header class="header">
     <nav class="nav">
-      <a class="brand" href="#top">
+      <a class="brand" href="index.html#top">
         <img src="assets/images/OSS-Logo.png" alt="Overshare Shield logo" class="nav-logo">
-<span>Overshare Shield</span>
+        <span>Overshare Shield</span>
       </a>
-
+  
       <button class="menu-btn" type="button" aria-label="Open menu" onclick="toggleMenu()">
-        Menu
+        <span></span>
       </button>
-
-      <div id="navLinks" class="nav-links">
-        <a href="#vision">Vision</a>
-        <a href="#problem">Problem</a>
-        <a href="#method">Method</a>
-        <a href="#standards">Standards</a>
-        <a href="#privacy">Privacy by Design</a>
+  
+      <div id="navLinks" class="nav-links-dropdown">
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" type="button" onclick="toggleHomeDropdown()">
+            Home <span class="caret">▾</span>
+          </button>
+  
+          <div id="homeDropdown" class="dropdown-menu">
+            <a href="index.html#top">Overview</a>
+            <a href="index.html#vision">Vision</a>
+            <a href="index.html#problem">Problem</a>
+            <a href="index.html#method">Methodology</a>
+            <a href="index.html#standards">Industry Standards</a>
+            <a href="index.html#privacy">Privacy by Design</a>
+          </div>
+        </div>
+  
         <a href="process.html">Process</a>
-
-        <a class="btn small"
-        href="mailto:clittell@my.gcu.edu,taylor.durocher@gmail.com,bbarajas117@icloud.com?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Team%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">
-       Contact the Team
-     </a>
+  
+        <a class="btn small" href="mailto:clittell@my.gcu.edu,taylor.durocher@gmail.com,bbarajas117@icloud.com?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Team%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">
+          Contact the Team
+        </a>
       </div>
     </nav>
   </header>
