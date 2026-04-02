@@ -9,36 +9,39 @@
 </head>
 
 <body>
-  <!-- Top navigation -->
   <header class="header">
     <nav class="nav">
       <a class="brand" href="index.html#top">
         <img src="assets/images/OSS-Logo.png" alt="Overshare Shield logo" class="nav-logo">
         <span>Overshare Shield</span>
       </a>
-  
+
       <button class="menu-btn" type="button" aria-label="Open menu" onclick="toggleMenu()">
         <span></span>
       </button>
-  
+
       <div id="navLinks" class="nav-links-dropdown">
         <div class="nav-dropdown">
           <button class="dropdown-toggle" type="button" onclick="toggleHomeDropdown()">
             Home <span class="caret">▾</span>
           </button>
-  
+
           <div id="homeDropdown" class="dropdown-menu">
             <a href="index.html#top">Overview</a>
             <a href="index.html#vision">Vision</a>
             <a href="index.html#problem">Problem</a>
             <a href="index.html#method">Methodology</a>
+            <a href="index.html#diagram">System Diagram</a>
+            <a href="index.html#tech-stack">Tech Stack</a>
             <a href="index.html#standards">Industry Standards</a>
             <a href="index.html#privacy">Privacy by Design</a>
+            <a href="index.html#impact">Why It Matters</a>
+            <a href="index.html#contact">Contact</a>
           </div>
         </div>
-  
+
         <a href="process.html">Process</a>
-  
+
         <a class="btn small" href="mailto:clittell@my.gcu.edu,taylor.durocher@gmail.com,bbarajas117@icloud.com?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Team%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">
           Contact the Team
         </a>
@@ -46,8 +49,8 @@
     </nav>
   </header>
 
-  <!-- Hero -->
   <a id="top"></a>
+
   <section class="hero">
     <div class="container hero-single fade">
       <p class="tag">CLC Capstone • Web Application</p>
@@ -60,8 +63,8 @@
       </p>
 
       <div class="cta-row">
-        <a class="btn" href="#method">How it works</a>
-        <a class="btn ghost" href="process.html">View process</a>
+        <a class="btn" href="#method">How It Works</a>
+        <a class="btn ghost" href="process.html">View Process</a>
       </div>
 
       <div class="mini-points">
@@ -82,20 +85,18 @@
   </section>
 
   <main class="container">
-    <!-- Vision -->
     <section id="vision" class="section fade">
       <div class="section-head">
         <h2>Vision</h2>
-        <p class="muted">Why this project exists.</p>
+        <p class="muted">What Overshare Shield is ultimately designed to achieve.</p>
       </div>
       <p>
-        Our vision is to empower everyday users to protect their privacy online by making oversharing risks clear,
-        measurable, and easy to understand. Overshare Shield supports safer digital behavior through privacy by design
-        and cybersecurity awareness.
+        Our vision is to empower everyday users to make safer online choices by turning privacy risks into clear,
+        understandable feedback. Overshare Shield aims to promote long-term cybersecurity awareness, strengthen
+        digital responsibility, and make privacy protection more accessible to non-technical users.
       </p>
     </section>
 
-    <!-- Problem -->
     <section id="problem" class="section fade">
       <div class="section-head">
         <h2>Problem</h2>
@@ -108,7 +109,6 @@
       </p>
     </section>
 
-    <!-- Methodology -->
     <section id="method" class="section fade">
       <div class="section-head">
         <h2>Methodology</h2>
@@ -125,7 +125,56 @@
       </ol>
     </section>
 
-    <!-- Standards -->
+    <section id="diagram" class="section fade">
+      <div class="section-head">
+        <h2>System Diagram</h2>
+        <p class="muted">A visual overview of how Overshare Shield processes user-submitted content.</p>
+      </div>
+
+      <div class="diagram-card">
+        <img src="assets/images/Process-workflow.png" alt="Overshare Shield system diagram" class="diagram-image">
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section fade">
+      <div class="section-head">
+        <h2>Tech Stack</h2>
+        <p class="muted">Core technologies used to build and support the application.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Frontend</h3>
+          <p>React and JavaScript power the user interface and interactive dashboard experience.</p>
+        </div>
+
+        <div class="card">
+          <h3>Backend</h3>
+          <p>FastAPI and Python manage processing logic, analysis, and communication between system components.</p>
+        </div>
+
+        <div class="card">
+          <h3>Data Flow</h3>
+          <p>JSON and multipart file uploads support communication between frontend input and backend analysis.</p>
+        </div>
+
+        <div class="card">
+          <h3>Image Processing</h3>
+          <p>Pillow is used for image handling, metadata review, and privacy-related image sanitation features.</p>
+        </div>
+
+        <div class="card">
+          <h3>Validation</h3>
+          <p>Pydantic supports structured validation and helps maintain clean, secure processing logic.</p>
+        </div>
+
+        <div class="card">
+          <h3>Deployment Style</h3>
+          <p>Overshare Shield is designed as a local-first web application to maximize privacy and reduce unnecessary exposure of user data.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="standards" class="section fade">
       <div class="section-head">
         <h2>Industry Standards Applied</h2>
@@ -172,7 +221,6 @@
       </div>
     </section>
 
-    <!-- Privacy -->
     <section id="privacy" class="section fade">
       <div class="section-head">
         <h2>Privacy by Design</h2>
@@ -202,7 +250,7 @@
             Overshare Shield analyzes content you voluntarily submit to identify potential privacy risks.
             No automatic data collection occurs. All analysis is initiated by you.
           </p>
-      
+
           <p><strong>By continuing, you acknowledge:</strong></p>
           <ul>
             <li>You are submitting content voluntarily for privacy analysis.</li>
@@ -211,12 +259,12 @@
             <li>No data will be shared externally without your consent.</li>
             <li>If you are under 13, parental permission is required.</li>
           </ul>
-      
+
           <p>
             This process aligns with privacy standards including ISO/IEC 27001, ISO/IEC 29100,
             CCPA/CPRA, COPPA, and the NIST Privacy Framework.
           </p>
-      
+
           <p><strong>Consent options:</strong></p>
           <p>☐ I Consent</p>
           <p>✖ I Cancel</p>
@@ -224,11 +272,39 @@
       </details>
     </section>
 
-    <!-- Contact -->
+    <section id="impact" class="section fade">
+      <div class="section-head">
+        <h2>Why It Matters</h2>
+        <p class="muted">Why Overshare Shield is important in today’s digital environment.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Prevents Oversharing Before It Happens</h3>
+          <p>Many users share personal details online without realizing the risks. Overshare Shield helps identify those risks before content is posted or shared further.</p>
+        </div>
+
+        <div class="card">
+          <h3>Reduces Real Cybersecurity Threats</h3>
+          <p>Exposed personal information can contribute to phishing, identity theft, cyberstalking, and social engineering. The platform helps users recognize and reduce that exposure early.</p>
+        </div>
+
+        <div class="card">
+          <h3>Makes Privacy Easy to Understand</h3>
+          <p>Privacy tools are often too technical for everyday users. Overshare Shield turns complex risk into simple, actionable feedback that users can actually understand and use.</p>
+        </div>
+
+        <div class="card">
+          <h3>Supports Digital Responsibility</h3>
+          <p>The project encourages better online decision-making by helping users understand how their posts, images, and personal details may affect their security and privacy.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="section fade">
       <div class="section-head">
         <h2>Contact</h2>
-        <p class="muted">Questions, feedback, or stakeholder review.</p>
+        <p class="muted">Questions about the project, design, or compliance approach.</p>
       </div>
 
       <div class="contact-box">
@@ -239,8 +315,8 @@
       </div>
 
       <div class="cta-row" style="margin-top:14px;">
-        <a class="btn" href="mailto:clittell@my.gcu.edu?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Cayleigh%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question%20about%20the%20capstone.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">Email the team</a>
-        <a class="btn ghost" href="#top">Back to top</a>
+        <a class="btn" href="mailto:clittell@my.gcu.edu,taylor.durocher@gmail.com,bbarajas117@icloud.com?subject=Overshare%20Shield%20Project%20Inquiry&body=Hi%20Team%2C%0A%0AI%20visited%20the%20Overshare%20Shield%20project%20site%20and%20had%20a%20question.%0A%0AName%3A%0AQuestion%3A%0A%0AThanks%2C">Email the Team</a>
+        <a class="btn ghost" href="#top">Back to Top</a>
       </div>
     </section>
 
