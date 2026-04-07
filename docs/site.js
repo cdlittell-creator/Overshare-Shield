@@ -39,7 +39,7 @@ document.querySelectorAll("#navLinks a").forEach(link => {
   });
 });
 
-/* Live countdown to April 8, 2026 */
+/* Live countdown to April 8, 2026 at 8:00 AM Phoenix time */
 (function setupLiveCountdown(){
   const daysEl = document.getElementById("countdownDays");
   const hoursEl = document.getElementById("countdownHours");
@@ -48,7 +48,7 @@ document.querySelectorAll("#navLinks a").forEach(link => {
 
   if(!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
 
-  const targetDate = new Date("2026-04-08T00:00:00");
+  const targetDate = new Date("2026-04-08T08:00:00-07:00");
 
   function updateCountdown(){
     const now = new Date();
